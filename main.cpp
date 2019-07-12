@@ -39,7 +39,6 @@ int main(int argc, char** argv)
     else if (argc == 3 && string (argv[1]) == "-n") {
         fstream plik1;
         plik1.open(argv[2], ios::out);
-        plik1 << "MWLang Alpha Development Kit @ Copyright MultiWu 2019" << endl;
         plik1.close();
     }
     return 0;
