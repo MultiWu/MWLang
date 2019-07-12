@@ -1,4 +1,4 @@
-# MWLang BETA Development Kit
+# MWLang ALPHA Development Kit
 Syntax:
 1. print text - displays a text on the screen (On the "text" place, enter the message you want to display).
 
