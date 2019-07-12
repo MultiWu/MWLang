@@ -26,15 +26,17 @@ int compile(stringstream& plik) {
         getline(file, line[i], ' ');
     }
     file.close();
-    for (i=0; i<=100; i++) {
+    for (i=1; i<=100; i++) {
         if (line[i] == "") {}
         else {
             cout << line[i] << endl;
         }
     }
     file2.open( plik2, ios::out | ios::app );
+    file2 << "// MWLang BETA Development Kit @ Copyright 2019"
+    file2 << endl;
     file2 << "void main() {" << endl;
-    for (i=0; i<=100; i++) {
+    for (i=1; i<=100; i++) {
         if (line[i] == "print") {
             i = i2;
             i2++;
