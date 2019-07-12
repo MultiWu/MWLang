@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1562942283 source:c:\users\oliwier\mwlang\main.cpp
+	<windows.h>
+	<iostream>
+	<fstream>
+	<stdio.h>
+	<sstream>
+	"compile.hpp"
+
+1562944417 c:\users\oliwier\mwlang\compile.hpp
+	<cstdlib>
+	<string>
+	<sstream>
+
