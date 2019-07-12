@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1562942283 source:c:\users\oliwier\mwlang\main.cpp
+1562953228 source:c:\users\oliwier\mwlang\main.cpp
 	<windows.h>
 	<iostream>
 	<fstream>
@@ -7,7 +7,7 @@
 	<sstream>
 	"compile.hpp"
 
-1562944417 c:\users\oliwier\mwlang\compile.hpp
+1562953282 c:\users\oliwier\mwlang\compile.hpp
 	<cstdlib>
 	<string>
 	<sstream>
