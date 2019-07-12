@@ -22,7 +22,7 @@ int compile(stringstream& plik) {
     plik2 = konc[0] + ".cpp";
     fstream file2(plik2);
     fstream file(plik.str());
-    for (i=0; i<=100; i++) {
+    for (i=1; i<=100; i++) {
         getline(file, line[i], ' ');
     }
     file.close();
@@ -33,7 +33,7 @@ int compile(stringstream& plik) {
         }
     }
     file2.open( plik2, ios::out | ios::app );
-    file2 << "// MWLang Alpha Development Kit @ Copyright 2019"
+    file2 << "// Created by MWLang Alpha Development Kit @ Copyright MultiWu 2019" << endl;
     file2 << endl;
     file2 << "void main() {" << endl;
     for (i=1; i<=100; i++) {
@@ -45,6 +45,24 @@ int compile(stringstream& plik) {
             file2 << line[i2];
             file2 << "\" << endl;" << endl;
         }
+        if (line[i] == "exit") {
+            file2 << "return 0;" << endl;
+        }
+        if (line[i] == "sum") {
+            i = i2;
+            i2++;
+            file2 << "cout << ";
+            file2 << line[i2];
+            i2++;
+            file2 << " ";
+            file2 << line[i2];
+            i2++;
+            file2 << " ";
+            file2 << line[i2];
+            i2++;
+            file2 << " ";
+            file2 << "endl;";
+            }
     }
     file2 << "}" << endl;
     file2.close();

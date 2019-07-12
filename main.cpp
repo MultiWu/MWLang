@@ -11,13 +11,10 @@ string file;
 
 int main(int argc, char** argv)
 {
-    cout << "MWLang BETA Development Kit @ Copyright MultiWu 2019" << endl;
+    cout << "MWLang Alpha Development Kit @ Copyright MultiWu 2019" << endl;
     if (argc <2) {
         cout << "Compiling: mwlang -c filename.mw" << endl;
         cout << "New .mw file: mwlang -n filename.mw" << endl;
-    }
-    else if (argc <3 && string (argv[1]) == "-c") {
-        cout << "USAGE: " << "mwlang";
     }
     else if (argc == 3 && string (argv[1]) == "-c") {
         fstream plik;
@@ -42,7 +39,7 @@ int main(int argc, char** argv)
     else if (argc == 3 && string (argv[1]) == "-n") {
         fstream plik1;
         plik1.open(argv[2], ios::out);
-        plik1 << "MWLang BETA Development Kit @ Copyright MultiWu 2019" << endl;
+        plik1 << "MWLang Alpha Development Kit @ Copyright MultiWu 2019" << endl;
         plik1.close();
     }
     return 0;
