@@ -33,7 +33,7 @@ int compile(stringstream& plik) {
         }
     }
     file2.open( plik2, ios::out | ios::app );
-    file2 << "// MWLang BETA Development Kit @ Copyright 2019"
+    file2 << "// MWLang Alpha Development Kit @ Copyright 2019"
     file2 << endl;
     file2 << "void main() {" << endl;
     for (i=1; i<=100; i++) {
