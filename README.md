@@ -4,6 +4,6 @@ Syntax:
 
 
 Compiling: mwlang -c file.mw
-WARNING!! Compiler works only with files created by application.
+WARNING!! Compiler works properly only with files created by application.
 
 New .mw file: mwlang -n file.mw
